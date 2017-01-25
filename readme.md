@@ -1,6 +1,8 @@
 # NativeRegMod
 
 This is basically a native application that can modify the registry during the early boot stage.
+http://reboot.pro/topic/18872-nativeregmod/
+
 
 ## So what's a native application?
 An excellent description can be found by Mark at Sysinternals; http://technet.microsoft.com/en-us/sysinternals/bb897447.aspx
@@ -15,8 +17,8 @@ In short it is an application you can configure to run before the Win32 subsyste
 
 ## How to configure OS
 The application file must be located within the \Windows\System32 folder. And the relevant registry key are:
-[IMG]http://i1100.photobucket.com/albums/g407/joakimschicht/BootExecute_zps70e2f5d1.png[/IMG]
 
+![BootExecute](/BootExecute_zps70e2f5d1.png)
 
 The included reg file will import the correct setting, as shown in the above image.
 
@@ -80,5 +82,5 @@ Even though there exist compiled versions for both 32 and 64-bit, the 32-bit als
 5. The exe file should be generated in bin/i386/
 
 
-http://reboot.pro/topic/18872-nativeregmod/
+
 
