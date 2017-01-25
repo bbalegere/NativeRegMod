@@ -18,7 +18,7 @@ In short it is an application you can configure to run before the Win32 subsyste
 ## How to configure OS
 The application file must be located within the \Windows\System32 folder. And the relevant registry key are:
 
-![BootExecute](/BootExecute_zps70e2f5d1.png?raw=true)
+![BootExecute](https://github.com/bbalegere/NativeRegMod/raw/master/BootExecute_zps70e2f5d1.PNG)
 
 The included reg file will import the correct setting, as shown in the above image.
 
