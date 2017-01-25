@@ -276,7 +276,7 @@ void NtProcessStartup( PSTARTUP_ARGUMENT Argument )
 		RtlInitAnsiString(&szAnsiStr, buffer);
 		RtlAnsiStringToUnicodeString(&filename, &szAnsiStr, TRUE);
 		InitializeObjectAttributes(&obja, &filename, OBJ_CASE_INSENSITIVE, NULL, NULL);
-		status = NtOpenFile(&file, FILE_READ_DATA, &obja, &iostatusblock, NULL, NULL);
+		status = NtOpenFile(&file, FILE_READ_DATA, &obja, &iostatusblock, FILE_SHARE_READ, FILE_SEQUENTIAL_ONLY);
 		if(!NT_SUCCESS(status)) {
 			continue;
 		}
